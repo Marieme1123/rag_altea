@@ -47,3 +47,10 @@ if __name__ == "__main__":
     for (service, source), n in nb_pages.items():
         print(f"{service:8} {source:28} {n} page(s)")
     print(f"\nTotal : {len(nb_pages)} documents, {len(pages)} pages")
+
+
+    ### Q2 ✍ Pourquoi conserve-t-on le nom du fichier, la page et le service, et pas seulement le texte ?
+
+# Le texte seul ne dit pas d'où vient l'information. Avec la source, l'assistant peut :
+# 1. **Citer ses sources** dans la réponse (« teletravail.pdf, page 1 ») : le salarié peut vérifier lui-même.
+# 2. **Filtrer par service** (ne chercher que dans RH ou que dans IT) et préparer la confidentialité.
